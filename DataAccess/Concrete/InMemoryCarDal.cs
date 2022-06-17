@@ -54,6 +54,11 @@ namespace DataAccess.Concrete
             throw new NotImplementedException();
         }
 
+        public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(Car entity)
         {
             Car carToDelete = _cars.SingleOrDefault(c => c.Id == entity.Id);

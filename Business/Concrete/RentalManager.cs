@@ -1,5 +1,5 @@
 ﻿using Business.Abstract;
-using Business.Constans;
+using Business.Constants;
 using Core.Utilities.Result;
 using DataAccess.Abstract;
 using Entity.Concrete;
@@ -19,7 +19,7 @@ namespace Business.Concrete
         public IResult Add(Rental rental)
         {
             _rentalDal.Add(rental);
-            return new SuccessResult(Messages.ProductAdded);
+            return new SuccessResult();
         }
 
         public IDataResult<List<Rental>> GetAll()
