@@ -70,20 +70,6 @@ namespace ConsoleUI
             }
         }
 
-        private static void GetCarDetalis(CarManager carManager)
-        {
-            foreach (var item in carManager.GetCarsDetalis().Data)
-            {
-                Console.WriteLine(item.BrandName + item.ColorName + item.DailyPrice);
-            }
-        }
-
-        private static void GetAll(CarManager carManager)
-        {
-            foreach (var item in carManager.GetAll().Data)
-            {
-                Console.WriteLine(item.Id);
-            }
-        }
+   
     }
 }
