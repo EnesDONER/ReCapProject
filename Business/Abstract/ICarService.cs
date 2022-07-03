@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Text;
 using Entities.DTOs;
 using DataAccess.Dtos;
-using Core.Utilities.Result;
+using Core.Utilities.Results;
 
 namespace Business.Abstract
 {

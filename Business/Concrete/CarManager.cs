@@ -9,8 +9,9 @@ using Business.Constants;
 using Entities.DTOs;
 using Core.Aspects.Autofac.Validation;
 using Business.ValidationRules;
-using Core.Utilities.Result;
+using Core.Utilities.Results;
 using DataAccess.Dtos;
+using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
@@ -22,7 +23,8 @@ namespace Business.Concrete
         {
             _carDal = carDal;
         }
-        
+
+        [SecuredOperation("car.add,admin")]
         [ValidationAspect(typeof(CarValidator))]
         public IResult Add(Car car)
         {

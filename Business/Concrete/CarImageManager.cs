@@ -2,7 +2,7 @@
 using Business.Constants;
 using Core.Utilities.Business;
 using Core.Utilities.FileHelper;
-using Core.Utilities.Result;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;

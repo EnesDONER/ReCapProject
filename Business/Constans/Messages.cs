@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -53,5 +54,6 @@ namespace Business.Constants
         public static string UserInfo = "Kullanıcı bilgileri : \n";
         public static string CarCountOfColorError = "Bir araba en fazla 5 renk seçeneğine sahiptir!\n";
         public static string CarNameExistBefore = "Aynı araç ismine sahip başka bir araç daha vardır!";
+        public static string AuthorizationDenied = "Yetkiniz Yok.";
     }
 }
