@@ -3,6 +3,7 @@ using Entities.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace WebAPI.Controllers
 {
@@ -64,6 +65,7 @@ namespace WebAPI.Controllers
         [HttpGet("getcardetails")]
         public IActionResult GetCarDetails()
         {
+            Thread.Sleep(500);
             var result = _carService.GetCarDetailsAll();
             if (result.Success)
             {
@@ -76,6 +78,16 @@ namespace WebAPI.Controllers
         public IActionResult GetCarDetailsByBrandName(string brandName)
         {
             var result = _carService.GetCarDetailsByBrandName(brandName);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getcardetailsbybrandid")]
+        public IActionResult GetCarDetailsByBrandId(int id)
+        {
+            var result = _carService.GetCarDetailsByBrandId(id);
             if (result.Success)
             {
                 return Ok(result);
@@ -98,6 +110,16 @@ namespace WebAPI.Controllers
         public IActionResult GetCarDetailsByColorName(string colorName)
         {
             var result = _carService.GetCarDetailsByColorName(colorName);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+        [HttpGet("getcardetailscolorId")]
+        public IActionResult GetCarDetailsByColorId(int id)
+        {
+            var result = _carService.GetCarDetailsByColorId(id);
             if (result.Success)
             {
                 return Ok(result);

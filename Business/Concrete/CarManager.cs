@@ -12,16 +12,18 @@ using Business.ValidationRules;
 using Core.Utilities.Results;
 using DataAccess.Dtos;
 using Business.BusinessAspects.Autofac;
+using Core.Utilities.Business;
 
 namespace Business.Concrete
 {
     public class CarManager : ICarService
     {
         ICarDal _carDal;
-
-        public CarManager(ICarDal carDal)
+        IBrandService _brandService;
+        public CarManager(ICarDal carDal , IBrandService brandService)
         {
             _carDal = carDal;
+            _brandService = brandService;
         }
 
         [SecuredOperation("car.add,admin")]
@@ -51,6 +53,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarDeleted);
         }
         [ValidationAspect(typeof(CarValidator))]
+        [SecuredOperation("admin")]
         public IDataResult<List<Car>> GetAll()
         {
             return new SuccessDataResult<List<Car>>(_carDal.GetAll());
@@ -101,6 +104,30 @@ namespace Business.Concrete
         public IDataResult<List<CarDetailDto>> GetCarDetailsByFilter(int carId, string brandName, string colorName)
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(c => c.Id == carId && c.BrandName == brandName && c.ColorName == colorName));
+        }
+
+        public IDataResult<List<CarDetailDto>> GetCarDetailsByColorId(int id)
+        {
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(c => c.ColorId == id));
+        }
+        
+        public IDataResult<List<CarDetailDto>> GetCarDetailsByBrandId(int id)
+        {
+            IResult result = BusinessRules.Run(CheckIfCarBrand(id));
+            if (result != null)
+            {
+                return new ErrorDataResult<List<CarDetailDto>>();
+            }
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(c => c.BrandId == id));
+        }
+        private IResult CheckIfCarBrand(int id)
+        {
+            if (_carDal.GetCarDetails(c => c.BrandId == id).Any())
+            {
+                return new SuccessResult();
+            }
+
+            return new ErrorResult();
         }
     }
 }

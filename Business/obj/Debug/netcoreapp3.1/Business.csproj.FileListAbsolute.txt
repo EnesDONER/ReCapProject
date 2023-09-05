@@ -1,0 +1,17 @@
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.deps.json
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Business.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\DataAccess.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\DataAccess.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.AssemblyReference.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfoInputs.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.AssemblyInfo.cs
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.csproj.CopyComplete
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Business\obj\Debug\netcoreapp3.1\Business.pdb

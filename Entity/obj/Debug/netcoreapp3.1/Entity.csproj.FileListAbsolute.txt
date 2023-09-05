@@ -1,0 +1,13 @@
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\bin\Debug\netcoreapp3.1\Entity.deps.json
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\bin\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\bin\Debug\netcoreapp3.1\Entity.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\bin\Debug\netcoreapp3.1\Core.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\bin\Debug\netcoreapp3.1\Core.pdb
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.AssemblyReference.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfoInputs.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.AssemblyInfo.cs
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.csproj.CopyComplete
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.dll
+C:\Users\Enes\Desktop\Project\C#\ReCapProject\Entity\obj\Debug\netcoreapp3.1\Entity.pdb

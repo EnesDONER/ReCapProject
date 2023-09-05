@@ -11,14 +11,13 @@ using Core.DataAccess.EntityFramework;
 using Entities.DTOs;
 using DataAccess.Dtos;
 
-//Hem EntityRepository hem EfEntityRepositoryBase referanslarını tutabildiği için here iki sınıfında metodlarını kullanabilir
 
 namespace DataAccess.Concrete.EntityFramework
 {
     public class EfCarDal : EfEntityRepositoryBase<Car, ReCapDbContext>, ICarDal
-    {//sınıfa özgün metodlar burada yazılır
+    {
         public List<CarDetailDto> GetCarDetails(Expression<Func<CarDetailDto, bool>> filter = null)
-        {//Brands ve Colors tablolarını join operasyonuyla Cars tablosuna view benzeri işlevi gerçekleştirmek için yazıldı
+        {
             using (ReCapDbContext context = new ReCapDbContext())
             {
                 var result = from c in context.Cars
@@ -31,7 +30,10 @@ namespace DataAccess.Concrete.EntityFramework
                         ColorName = co.Name, 
                         Description = c.Description,
                         ModelYear = c.ModelYear, 
-                        DailyPrice = c.DailyPrice
+                        DailyPrice = c.DailyPrice,
+                        ColorId = co.Id,
+                        BrandId =b.Id
+
                     };
                 return filter == null
                     ? result.ToList()
